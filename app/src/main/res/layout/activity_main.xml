@@ -7,10 +7,54 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="qualserie.cursoandroid.com.qualserie.MainActivity">
+    tools:context="qualserie.cursoandroid.com.qualserie.MainActivity"
+    android:background="#ffffff">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarId"
+        android:layout_marginTop="37dp"
+        android:indeterminate="false"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:max="4" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pouco"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/seekBarId"
+        android:layout_alignStart="@+id/seekBarId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Muito"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/seekBarId"
+        android:layout_alignEnd="@+id/seekBarId" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagemExibicaoId"
+        android:background="@drawable/pouco"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/seekBarId"
+        android:layout_alignEnd="@+id/seekBarId" />
+
 </RelativeLayout>
