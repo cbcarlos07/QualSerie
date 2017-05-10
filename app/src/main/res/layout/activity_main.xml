@@ -54,7 +54,9 @@
         android:id="@+id/imagemExibicaoId"
         android:background="@drawable/pouco"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/seekBarId"
-        android:layout_alignEnd="@+id/seekBarId" />
+        android:layout_below="@+id/seekBarId"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginTop="61dp" />
 
 </RelativeLayout>
